@@ -7,11 +7,11 @@ def main ():
 
 
 def base64_encode(input):
-    pass
+    return base64.b64encode( input.encode('ascii') ).decode('ascii')
 
 
 def base64_decode(input):
-    return base64.b64decode(input).decode('ascii')
+    return base64.b64decode( input.encode('ascii')  ).decode('ascii')
 
 
 if __name__ == "__main__":
