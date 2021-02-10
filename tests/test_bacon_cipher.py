@@ -1,5 +1,5 @@
 import pytest
-from src.bacon import *
+from src.bacon_cipher import *
 
 plaintext = """AAABAABBBAABBABAABBABAAABAAAAABAABBBABAAABABBAAAAABAA
 BBABAAAABBBAABBABBAABA BBAAAABBBABABAA
