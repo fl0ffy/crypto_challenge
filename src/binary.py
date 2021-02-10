@@ -6,15 +6,11 @@ def main ():
 
 
 def binary_encode(input):
-    pass
+    return ' '.join(list(map(lambda x: format(ord(x),'b').zfill(8), input)))
 
 
 def binary_decode(input):
-    l = input.split()
-    tl = []
-    for i in l:
-        tl.append(chr(int(i, base=2)))
-    return ''.join(tl)
+    return ''.join(list(map(lambda x: chr(int(x, base=2)), input.split())))
 
 
 if __name__ == "__main__":
